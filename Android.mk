@@ -87,7 +87,7 @@ LOCAL_SRC_FILES := \
     service.cc \
     shill_manager.cc
 $(eval $(apmanager_common))
-include $(BUILD_STATIC_TEST_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 # === apmanager ===
 include $(CLEAR_VARS)
@@ -96,7 +96,6 @@ LOCAL_INIT_RC := apmanager.rc
 LOCAL_SRC_FILES := \
     main.cc
 LOCAL_STATIC_LIBRARIES := libapmanager
-LOCAL_C_INCLUDES += external/gtest/include
 $(eval $(apmanager_common))
 include $(BUILD_EXECUTABLE)
 
