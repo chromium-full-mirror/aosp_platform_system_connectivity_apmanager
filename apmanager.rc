@@ -6,7 +6,7 @@ on post-fs-data
 service apmanager /system/bin/apmanager
     class late_start
     user system
-    group system dbus net_admin net_raw
+    group system dbus inet
     disabled
 
 on property:wifi-setup.complete=1
