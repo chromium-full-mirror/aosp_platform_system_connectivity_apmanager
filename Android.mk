@@ -102,9 +102,6 @@ include $(BUILD_EXECUTABLE)
 # === apmanager_test ===
 include $(CLEAR_VARS)
 LOCAL_MODULE := apmanager_test
-ifdef BRILLO
-  LOCAL_MODULE_TAGS := eng
-endif # BRILLO
 LOCAL_SRC_FILES := \
     config_unittest.cc \
     device_info_unittest.cc \
