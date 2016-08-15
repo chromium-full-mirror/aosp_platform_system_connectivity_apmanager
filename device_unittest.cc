@@ -78,7 +78,7 @@ class DeviceTest : public testing::Test {
     EXPECT_EQ(interface_name, device_->GetPreferredApInterface());
   }
 
-  void AddWiphyBandAttribute(shill::AttributeListRefPtr wiphy_bands,
+  void AddWiphyBandAttribute(const shill::AttributeListRefPtr& wiphy_bands,
                              const std::string& band_name,
                              int band_id,
                              std::vector<uint32_t> frequency_list,
