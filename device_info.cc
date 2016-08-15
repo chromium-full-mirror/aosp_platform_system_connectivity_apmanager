@@ -317,7 +317,7 @@ void DeviceInfo::OnWiFiInterfacePhyInfoReceived(
   device->RegisterInterface(iter->second);
 }
 
-void DeviceInfo::RegisterDevice(scoped_refptr<Device> device) {
+void DeviceInfo::RegisterDevice(const scoped_refptr<Device>& device) {
   if (!device) {
     return;
   }

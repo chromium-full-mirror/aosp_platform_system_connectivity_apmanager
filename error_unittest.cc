@@ -41,7 +41,7 @@ class ErrorTest : public Test {
     error->type_ = type;
   }
 
-  void PopulateError(Error* error, Error::Type type, string message) {
+  void PopulateError(Error* error, Error::Type type, const string& message) {
     error->type_ = type;
     error->message_ = message;
   }

@@ -35,7 +35,7 @@ class ManagerTest : public testing::Test {
         .WillByDefault(ReturnNew<FakeDeviceAdaptor>());
   }
 
-  void RegisterDevice(scoped_refptr<Device> device) {
+  void RegisterDevice(const scoped_refptr<Device>& device) {
     manager_.devices_.push_back(device);
   }
 

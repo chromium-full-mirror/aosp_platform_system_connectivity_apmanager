@@ -93,7 +93,7 @@ class DeviceInfo : public base::SupportsWeakPtr<DeviceInfo> {
       uint32_t iface_index, const shill::Nl80211Message& msg);
 
   scoped_refptr<Device> GetDevice(const std::string& phy_name);
-  void RegisterDevice(scoped_refptr<Device> device);
+  void RegisterDevice(const scoped_refptr<Device>& device);
 
   // Maps interface index to interface info
   std::map<uint32_t, Device::WiFiInterface> interface_infos_;

@@ -148,7 +148,7 @@ class DeviceInfoTest : public testing::Test {
     device_info_.OnWiFiInterfacePhyInfoReceived(interface_index, message);
   }
 
-  void RegisterDevice(scoped_refptr<Device> device) {
+  void RegisterDevice(const scoped_refptr<Device>& device) {
     device_info_.RegisterDevice(device);
   }
 
